@@ -1,0 +1,24 @@
+@media (min-width: 740px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}

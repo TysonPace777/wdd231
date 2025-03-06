@@ -1,0 +1,153 @@
+header {
+    background-color: lightskyblue;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    display: none;
+    justify-content: center;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+}
+
+#courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    text-align: center;
+}
+
+.course {
+    margin: 2px;
+}
+
+.completed {
+    background-color: green;
+    color: white;
+}
+
+.not-completed {
+    background-color: maroon;
+    color: white;
+}
+
+h3 {
+    color: white;
+    max-width: 100px;
+    padding: 4px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    max-height: 100px;
+    box-shadow: 3px 3px 2px darkblue;
+}
+
+.header-content {
+    max-width: auto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.name {
+    padding-left: 15px;
+    font-size: 35px;
+    font-family: Roboto;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+button {
+    margin-left: 35px;
+    color: black;
+    background-color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 739px) {
+    nav ul {
+        display: none;
+    }
+
+    nav ul.open {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+}
+
+main {
+    font-family: Roboto;
+    margin-bottom: 15px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    border: 2px solid darkgray;
+    margin: 3px;
+    justify-self: center;
+    width: 98%;
+    height: 98%;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.item {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+section h2 {
+    background-color: lightskyblue;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-top: 0;
+    text-align: center;
+}
+
+img {
+    display: flex;
+    justify-self: center;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background: lightskyblue;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
