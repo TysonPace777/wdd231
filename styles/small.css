@@ -33,12 +33,12 @@ nav a {
 }
 
 .completed {
-    background-color: green;
+    background-color: seagreen;
     color: white;
 }
 
 .not-completed {
-    background-color: maroon;
+    background-color: gray;
     color: white;
 }
 
@@ -58,7 +58,6 @@ nav a:hover {
 }
 
 .header-content {
-    max-width: auto;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -75,13 +74,13 @@ nav ul li {
     display: inline-block;
 }
 
-button {
+#menu {
     margin-left: 35px;
     color: black;
     background-color: white;
 }
 
-button:hover {
+#menu:hover {
     background-color: black;
     color: white;
 }
@@ -96,8 +95,8 @@ button:hover {
         flex-direction: column;
         justify-self: center;
         text-align: center;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
@@ -126,6 +125,29 @@ h1 {
 .item {
     grid-column: 1 / -1;
     grid-row: 2;
+}
+
+#filter-buttons {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 5px;
+}
+
+.filter {
+    color: white;
+    background-color: black;
+}
+
+.filter:hover {
+    color: black;
+    background-color: white;
+}
+
+#credits {
+    text-align: center;
+    padding-top: 5px;
 }
 
 section h2 {

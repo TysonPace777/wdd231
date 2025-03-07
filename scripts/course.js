@@ -78,10 +78,13 @@ const courses = [
     }
 ]
 
-function displayCourses() {
+function displayCourses(filterFunction = () => true) {
     const coursesContainer = document.getElementById('courses-container');
+    coursesContainer.innerHTML = '';
 
-    courses.forEach(course => {
+    const filteredCourses = courses.filter(filterFunction);
+
+    filteredCourses.forEach(course => {
         const courseElement = document.createElement('div');
         courseElement.classList.add('course');
 
@@ -98,3 +101,34 @@ function displayCourses() {
 }
 
 displayCourses();
+
+//filters
+
+document.getElementById('all').addEventListener('click', () => {
+    displayCourses();
+});
+
+document.getElementById('cse').addEventListener('click', () => {
+    displayCourses(course => course.subject === 'CSE');
+});
+
+document.getElementById('wdd').addEventListener('click', () => {
+    displayCourses(course => course.subject === 'WDD');
+});
+
+//credits
+const credit = document.getElementById('credits');
+
+const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
+
+const completedCredits = courses.reduce((acc, course) => {
+    if (course.completed) {
+        return acc + course.credits;
+    } else {
+        return acc;
+    }
+}, 0);
+
+const creditsLeft = totalCredits - completedCredits;
+
+credit.innerHTML = `Credits left to earn: ${creditsLeft}`;
