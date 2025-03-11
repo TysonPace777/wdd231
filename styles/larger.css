@@ -1,5 +1,5 @@
 @media (min-width: 740px) {
-    nav ul {
+    nav ul, nav ul.open {
         display: flex;
         justify-content: space-around;
     }
