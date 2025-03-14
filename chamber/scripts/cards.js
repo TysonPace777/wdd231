@@ -42,6 +42,7 @@ function displayData(data) {
         image.src = business.image;
         image.alt = `${business.name} image`;
         image.width = 150;
+        image.loading = 'lazy';
 
         card.appendChild(image);
         card.appendChild(name);
