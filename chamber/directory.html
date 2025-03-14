@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://tysonpace777.github.io/wdd231/chamber/directory.html">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
 </head>
@@ -37,28 +38,11 @@
         </nav>
     </header>
     <main>
-        <div class="cards">
-            <figure>
-                <h3>Business 1</h3>
-                <img src="#" alt="image">
-                <p>Some info</p>
-            </figure>
-            <figure>
-                <h3>Business 2</h3>
-                <img src="#" alt="image">
-                <p>Some info</p>
-            </figure>
-            <figure>
-                <h3>Business 3</h3>
-                <img src="#" alt="image">
-                <p>Some info</p>
-            </figure>
-            <figure>
-                <h3>Business 4</h3>
-                <img src="#" alt="image">
-                <p>Some info</p>
-            </figure>
+        <div class="style">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
         </div>
+        <div id="cards" class="grid"></div>
     </main>
     <footer>
         <ul class="info">

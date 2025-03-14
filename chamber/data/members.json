@@ -1,0 +1,60 @@
+{
+    "businesses": [
+        {
+            "name": "Little Caesars",
+            "address": "132 Center Street",
+            "phone": "801-388-1234",
+            "website": "littlecaesars.com",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5dF3jGA-aorYJdWXLASuuwZ-VWDpf0VPELw&s",
+            "membership": 1
+        },
+        {
+            "name": "Target",
+            "address": "342 Hill Drive",
+            "phone": "385-220-2935",
+            "website": "target.com",
+            "image": "https://img.sdcexec.com/files/base/acbm/sdce/image/2017/09/Target_store.59ce500ba3217.png?auto=format%2Ccompress&q=70",
+            "membership": 3
+        },
+        {
+            "name": "The Card Shop",
+            "address": "725 Hill Drive",
+            "phone": "801-432-9233",
+            "website": "thecardshop.com",
+            "image": "https://bloximages.chicago2.vip.townnews.com/pressrepublican.com/content/tncms/assets/v3/editorial/6/88/688104dc-29ae-5e66-ad56-41ee0800409d/622296c991739.image.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Sportsman's Warehouse",
+            "address": "654 Center Street",
+            "phone": "385-8267-0943",
+            "website": "sportsmanswarehouse.com",
+            "image": "https://dynl.mktgcdn.com/p/qIwtCOmXAG5Ao1I_ag06nzExamGcYeEhilDn8sT1me8/500x500",
+            "membership": 2
+        },
+        {
+            "name": "BYU Creamery",
+            "address": "754 900 East",
+            "phone": "801-739-2953",
+            "website": "byucreamery.com",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_371,q_65,w_559/v1/crm/utahvalley/BYU-Creamery-1---square_308450b6-5056-a36a-0bd06a90f3c28586.jpg",
+            "membership": 1
+        },
+        {
+            "name": "McDonald's",
+            "address": "3245 S 893 W",
+            "phone": "385-924-9274",
+            "website": "mcdonalds.com",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/93/72/a5/12-aout-2017-a-6h52.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Costco",
+            "address": "333 Foothill Drive",
+            "phone": "801-012-9932",
+            "website": "costco.com",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1646/906/5490b2f8aba2f.preview-620.jpg",
+            "membership": 2
+        }
+    ]
+}
