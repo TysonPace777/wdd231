@@ -44,10 +44,20 @@ function displayData(data) {
         image.width = 150;
         image.loading = 'lazy';
 
+        const level = document.createElement('p');
+        if (business.membership == 1) {
+          level.textContent = 'Membership: Basic'
+        } else if (business.membership == 2) {
+          level.textContent = 'Membership: Silver'
+        } else if (business.membership == 3) {
+          level.textContent = 'Membership: Gold'
+        }
+
         card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(level);
         card.appendChild(website);
 
         container.appendChild(card);
