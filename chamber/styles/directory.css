@@ -12,6 +12,11 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
 .image-item {
     grid-row: span 2;
     grid-column: 1;
@@ -123,7 +128,7 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
