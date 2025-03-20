@@ -19,10 +19,24 @@ function displayData(data) {
     const container = document.getElementById('gold');
     container.innerHTML = '';
 
-    if (Array.isArray(data)) {
-        data.forEach(business => {
+    const goldMembers = data.filter(business => business.membership === 3);
+
+    if (goldMembers.length > 1) {
+        const randomIndex1 = Math.floor(Math.random() * goldMembers.length);
+        let randomIndex2 = Math.floor(Math.random() * goldMembers.length);
+
+        while (randomIndex1 === randomIndex2) {
+            randomIndex2 = Math.floor(Math.random() * goldMembers.length);
+        }
+
+        const randomGoldMembers = [goldMembers[randomIndex1], goldMembers[randomIndex2]];
+
+        randomGoldMembers.forEach(business => {
             const gold = document.createElement('div');
             gold.classList.add('gold');
+
+            const spotlight = document.createElement('h3');
+            spotlight.textContent = "Spotlight";
 
             const name = document.createElement('h3');
             name.textContent = business.name;
@@ -45,14 +59,9 @@ function displayData(data) {
             image.loading = 'lazy';
 
             const level = document.createElement('p');
-            if (business.membership == 1) {
-                level.textContent = 'Membership: Basic'
-            } else if (business.membership == 2) {
-                level.textContent = 'Membership: Silver'
-            } else if (business.membership == 3) {
                 level.textContent = 'Membership: Gold'
-            }
-
+        
+            gold.appendChild(spotlight)
             gold.appendChild(image);
             gold.appendChild(name);
             gold.appendChild(address);
@@ -60,9 +69,7 @@ function displayData(data) {
             gold.appendChild(level);
             gold.appendChild(website);
 
-            if (business.membership == 3) {
-                container.appendChild(gold);
-            }
+            container.appendChild(gold);
         });
     }
 }
