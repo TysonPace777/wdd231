@@ -7,6 +7,15 @@ header {
     background-color: rgb(50, 170, 170);
 }
 
+.hero {
+    display: flex;
+    justify-self: center;
+    padding: 5px;
+    position: relative;
+    width: 55%;
+    height: 50%;
+}
+
 .title {
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +80,31 @@ h1 {
         background-color: transparent;
         font-size: x-large;
     }
+
+    .index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        text-align: center;
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    #gold {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+
+    .gold {
+        width: 100%;
+    }
 }
 
 @media (min-width: 939px) {
@@ -104,6 +138,28 @@ h1 {
         font-size: large;
         cursor: pointer;
     }
+
+    section {
+        width: 40%;
+    }
+
+    .index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        width: 70%;
+        justify-self: center;
+    }
+
+    #gold {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / -1;
+        grid-row: span 1;
+        grid-gap: 5%;
+        padding: 10px 10% 10px 10%;
+    }    
 }
 
 .right-column {
@@ -131,7 +187,19 @@ li {
     justify-self: center;
     padding: 0 10px 10px 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+section {
+    border: 1px darkgray solid;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-decoration: underline;
 }
 
 .grid {
@@ -140,6 +208,17 @@ li {
     grid-gap: 5rem;
     padding: 5px;
     text-align: center;
+}
+
+.gold {
+    border: 1px darkgray solid;
+    justify-self: center;
+}
+
+#gold img {
+    height: 150px;
+    padding: 15px;
+    width: auto;
 }
 
 .grid div {
@@ -183,6 +262,17 @@ li {
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.join {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.join a {
+    text-decoration: none;
+    font-size: larger;
 }
 
 p {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Directory Page</title>
+    <title>Chamber of Commerce Home Page</title>
     <meta name="author" content="Tyson Pace">
     <meta name="description" content="Chamber Website">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -15,8 +15,8 @@
     <meta property="og:url" content="https://tysonpace777.github.io/wdd231/chamber/directory.html">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/grid.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/gold.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
 </head>
@@ -25,7 +25,7 @@
     <header>
         <div class="heading">
             <img class="image-item" src="images/y-mountain.webp" alt="mountain" width="200">
-            <h2 class="title">Chamber of Commerce Directory Page</h2>
+            <h2 class="title">Chamber of Commerce Home Page</h2>
             <h2 class="right-column">Provo, Utah</h2>
         </div>
         <button id="menu">☰</button>
@@ -39,12 +39,26 @@
         </nav>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="style">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <img class="hero" src="images/Provo-Utah-Temple1.webp" alt="Provo Temple">
+        <div class="join">
+            <a href="#">Join Us!</a>
+            <p>Click the link to become a part of our chamber and grow your business alongside ours!</p>
         </div>
-        <div id="cards" class="grid"></div>
+        <div class="index">
+            <section>
+                <h2>Events</h2>
+                <p>None So Far</p>
+            </section>
+            <section>
+                <h2>Weather</h2>
+                <p>Temperature in Provo Utah: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <div id="gold"></div>
+        </div>
     </main>
     <footer>
         <ul class="info">

@@ -17,6 +17,7 @@ async function loadData() {
 
 function displayData(data) {
     const container = document.getElementById('cards');
+    const gold = document.getElementById('gold');
     container.innerHTML = '';
 
     if (Array.isArray(data)) {
