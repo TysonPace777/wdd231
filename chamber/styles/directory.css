@@ -226,6 +226,10 @@ section h2 {
     width: 225px;
 }
 
+.border {
+    border-bottom: 1px darkgray solid;
+}
+
 .grid div {
     border: 1px darkgray solid;
     padding-bottom: 3px;

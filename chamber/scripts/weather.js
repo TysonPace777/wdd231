@@ -56,9 +56,9 @@ function displayForecast(data) {
         const description = forecastData.weather[0].description;
 
         forecastItem.innerHTML = `
-            <p>${day}</strong>: ${temp}&deg;F</p>
+            <p>${day}: ${temp}&deg;F</p>
             <img src="${weatherIconUrl}" alt="${description}" />
-            <p>${description}</p>
+            <p class="border">${description}</p>
         `;
 
         forecastList.appendChild(forecastItem);
