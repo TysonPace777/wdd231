@@ -105,6 +105,17 @@ h1 {
     .gold {
         width: 100%;
     }
+
+    main ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style-type: none;
+        padding: 2px;
+    }
+
+    main li {
+        padding: 2px;
+    }
 }
 
 @media (min-width: 939px) {
@@ -148,7 +159,7 @@ h1 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         text-align: center;
-        width: 70%;
+        width: 90%;
         justify-self: center;
     }
 
@@ -160,13 +171,24 @@ h1 {
         grid-gap: 5%;
         padding: 10px 20px 10px 20px;
     }
+
+    main ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        padding: 2px;
+    }
+
+    main li {
+        padding: 2px;
+    }
 }
 
 .right-column {
     grid-column: 2 / 3;
 }
 
-li {
+footer li, nav li {
     padding-right: 35px;
     list-style-type: none;
 }

@@ -46,7 +46,7 @@ function displayForecast(data) {
     forecastList.innerHTML = '';
 
     for (let i = 0; i < 3; i++) {
-        const forecastData = data.list[i * 8]; // Each day is represented by 8 items, 1 every 3 hours
+        const forecastData = data.list[i * 8];
 
         const forecastItem = document.createElement('li');
         const date = new Date(forecastData.dt * 1000);
