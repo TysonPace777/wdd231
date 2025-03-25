@@ -188,7 +188,8 @@ h1 {
     grid-column: 2 / 3;
 }
 
-footer li, nav li {
+footer li,
+nav li {
     padding-right: 35px;
     list-style-type: none;
 }

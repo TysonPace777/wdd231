@@ -96,6 +96,10 @@ function displayCourses(filterFunction = () => true) {
 
         courseElement.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
 
+        courseElement.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
+
         coursesContainer.appendChild(courseElement);
     })
 }
@@ -132,3 +136,24 @@ const completedCredits = courses.reduce((acc, course) => {
 const creditsLeft = totalCredits - completedCredits;
 
 credit.innerHTML = `Credits left to earn: ${creditsLeft}`;
+
+//modal practice
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById("course-details");
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
