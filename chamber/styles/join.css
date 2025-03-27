@@ -1,0 +1,108 @@
+.member-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+    grid-gap: 15px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section div {
+    border: 1px solid darkgray;
+    border-radius: 1rem;
+    padding: 15px;
+    background-color: lightblue;
+    align-content: center;
+}
+
+section, section h2{
+    border: none;
+    text-decoration: none;
+}
+
+.details {
+    font-size: large;
+    background-color: rgb(50, 170, 170);
+    color: black;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+#button {
+    background: linear-gradient(rgb(50, 170, 170), rgb(178, 220, 221));
+    border: none;
+    margin: 3px;
+    padding: 5px;
+    font-size: large;
+}
+
+.details:hover, #button:hover {
+    cursor: pointer;
+}
+
+dialog {
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog h2, p {
+    text-align: center;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 75%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-size: large;
+    text-decoration: underline;
+}
+
+label {
+    padding-top: 15px;
+}
+
+@media (min-width: 939px) {
+    .size {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 938px) {
+    .size {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+}
