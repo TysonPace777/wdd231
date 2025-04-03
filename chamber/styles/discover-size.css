@@ -1,0 +1,45 @@
+main {
+    margin: 5px;
+}
+
+#discover {
+    display: grid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-items: center;
+    text-align: center;
+    grid-gap: 10px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.card button {
+    margin-top: 5px;
+}
+
+.card button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    #discover {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #discover {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    #discover {
+        grid-template-columns: 1fr 1fr;
+    }
+}
