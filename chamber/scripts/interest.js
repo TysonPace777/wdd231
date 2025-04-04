@@ -42,7 +42,10 @@ function displayItems(items) {
             const button = document.createElement('button');
             button.textContent = "Learn More";
 
-            
+            button.addEventListener("click", () => {
+                displayItemDetails(interest);
+            })
+
             card.appendChild(name);
             card.appendChild(image);
             card.appendChild(description);
@@ -55,3 +58,21 @@ function displayItems(items) {
 }
 
 loadItems();
+
+//Learn more
+function displayItemDetails(interest) {
+    const courseDetails = document.getElementById("learn-more");
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${interest.name}</h2>
+    <h3>${interest.address}</h3>
+    <p>${interest.description}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

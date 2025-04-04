@@ -8,7 +8,7 @@ main {
     padding-bottom: 15px;
     justify-items: center;
     text-align: center;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .card {
@@ -26,9 +26,34 @@ main {
     cursor: pointer;
 }
 
+#closeModal {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    border-color: red;
+    border-radius: 3px;
+}
+
+#closeModal:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+dialog {
+    border-radius: 5px;
+    border-width: 2px;
+}
+
 @media (min-width: 320px) and (max-width: 640px) {
     #discover {
         grid-template-columns: 1fr;
+    }
+
+    .card button {
+        width: 40%;
+        height: 35px;
+        justify-self: center;
     }
 }
 
@@ -36,10 +61,92 @@ main {
     #discover {
         grid-template-columns: 1fr;
     }
+    
+    .card {
+        display: grid;
+        grid-template-columns: 0.9fr 0.9fr;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        text-align: center;
+        justify-content: center;
+        grid-gap: 5px;
+    }
+
+    .card img {
+        grid-row: span 2;
+    }
+
+    .card img:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .card h2 {
+        grid-column: span 2;
+    }
+
+    .card p {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card address {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .card button {
+        grid-column: span 2;
+        width: 40%;
+        height: 35px;
+        justify-self: center;
+    }
 }
 
 @media (min-width: 1025px) {
     #discover {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 0.75fr 0.75fr;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        text-align: center;
+        justify-content: center;
+        grid-gap: 5px;
+    }
+
+    .card img {
+        grid-row: span 2;
+    }
+
+    .card img:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .card h2 {
+        grid-column: span 2;
+    }
+
+    .card p {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card address {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .card button {
+        grid-column: span 2;
+        width: 40%;
+        height: 35px;
+        justify-self: center;
     }
 }
