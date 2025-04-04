@@ -21,6 +21,10 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /** h1 for looks only **/
 h1 {
     margin-bottom: 0;

@@ -25,6 +25,7 @@ function displayItems(items) {
             card.classList.add('card');
 
             const name = document.createElement('h2');
+            name.classList.add('name');
             name.textContent = interest.name;
 
             const address = document.createElement('address');
