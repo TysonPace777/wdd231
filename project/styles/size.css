@@ -1,3 +1,45 @@
 @media (max-width: 640px) {
-    
+    nav ul {
+        display: none;
+    }
+
+    nav ul.open {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 641px) {
+    nav ul, nav ul.open {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 }
