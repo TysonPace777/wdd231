@@ -13,6 +13,10 @@ header {
     justify-content: space-around;
 }
 
+header img {
+    padding: 5px;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -24,6 +28,10 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black;
+    background-color: rgb(198, 230, 250);
+    padding: 3px;
+    border-radius: 3px;
+    font-family: Helvetica, sans-serif;
 }
 
 nav a:hover {
@@ -37,6 +45,48 @@ h3 {
     font-family: Lora, Arial, Helvetica, sans-serif;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    justify-self: center;
+    width: 45%;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    color: black;
+    font-size: xx-large;
+    background-color: rgba(255, 166, 0);
+    padding: 3px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.hero h3 {
+    text-decoration: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background-color: rgba(255, 166, 0);
+    padding: 3px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.hero img {
+    width: 80%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 main {
     justify-items: center;
     text-align: center;
@@ -44,6 +94,10 @@ main {
 
 main img {
     padding: 5px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
 }
 
 footer {
