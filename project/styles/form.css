@@ -1,0 +1,89 @@
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-family: Helvetica, sans-serif;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 3px;
+    font-weight: 600;
+}
+
+label {
+    padding-top: 20px;
+}
+
+input {
+    border: 1px solid darkgray;
+    height: 20px;
+}
+
+input:required {
+    border-left: 8px solid red;
+}
+
+input:required:valid {
+    border-left: 8px solid green;
+}
+
+#button {
+    height: 50px;
+    margin: 10px 2px 0 2px;
+    border-radius: 10px;
+    font-size: large;
+    background: linear-gradient(to right, rgb(255, 219, 100), rgb(255, 111, 54));
+    border: none;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+dialog {
+    display: block;
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog h2, p {
+    text-align: center;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+}
+
+dialog button:hover {
+    cursor: pointer;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+    line-height: 30px;
+    width: 80%;
+    justify-self: center;
+    margin-bottom: 10px;
+}

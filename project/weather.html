@@ -9,7 +9,11 @@
     <meta name="description" content="Course Site Plan Page">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/size.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/dialog.css">
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +24,7 @@
 
 <body>
     <header>
-        <img src="images/logo.webp" alt="Logo" width="150">
+        <img src="images/logo.webp" alt="Logo" width="150" loading="lazy">
         <h1>Practical West Utah Weather</h1>
         <nav>
             <ul>
@@ -29,9 +33,13 @@
                 <li><a href="form.html">Rate Us</a></li>
             </ul>
         </nav>
+        <button id="menu">&#9776;</button>
     </header>
     <main>
         <h2>Weather</h2>
+        <div id="cards"></div>
+        <button class="details">Wind Details</button>
+        <dialog id="wind-details" class="wind"></dialog>
     </main>
     <footer>
         <p>©️<span id="currentyear"></span> 🦅 Tyson Pace 🦅 USA</p>

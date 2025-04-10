@@ -9,6 +9,7 @@
     <meta name="description" content="Course Site Plan Page">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/size.css">
+    <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/dates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
 
 <body>
     <header>
-        <img src="images/logo.webp" alt="Logo" width="150">
+        <img src="images/logo.webp" alt="Logo" width="150" loading="lazy">
         <h1>Practical West Utah Weather</h1>
         <nav>
             <ul>
@@ -29,11 +30,38 @@
                 <li><a href="form.html">Rate Us</a></li>
             </ul>
         </nav>
+        <button id="menu">&#9776;</button>
     </header>
     <main>
         <h2>Send Us Your Feedback</h2>
-        <form>
-
+        <form method="get" action="thanks.html" class="join">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label for="firstname">First Name*:</label>
+                <input type="text" id="firstname" name="firstname" required title="Enter your first name" autocomplete="given-name">
+                
+                <label for="lastname">Last Name*:</label>
+                <input type="text" id="lastname" name="lastname" required title="Enter your last name" autocomplete="family-name">
+                
+                <label for="orgtitle">Reason For Feedback:</label>
+                <input type="text" id="feedback" name="feedback" required title="Enter your organizational title" 
+                    autocomplete="feedback-reason" pattern="[A-Za-z\-\s]{5,}" placeholder="Errors, Recommendations, etc.">
+                
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required title="Enter your email address" 
+                    autocomplete="email" placeholder="example@gmail.com">
+                
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" 
+                    autocomplete="tel">
+            </fieldset>
+            <fieldset>
+                <legend>Feedback Description</legend>
+                <label for="description">Explain Your Feedback:</label>
+                <textarea id="description" name="description" title="Provide details about your organization"></textarea>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Send Feedback" id="button">
         </form>
     </main>
     <footer>

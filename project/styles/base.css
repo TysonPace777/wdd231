@@ -104,6 +104,10 @@ main img {
     padding: 5px;
 }
 
+main p a {
+    text-decoration: none;
+}
+
 p {
     font-family: Helvetica, sans-serif;
 }
@@ -113,5 +117,6 @@ footer {
     background-color: rgba(135, 207, 235, 0.726);
     padding: 2rem;
     text-align: center;
+    justify-self: center;
     grid-column: 1 / -1;
 }

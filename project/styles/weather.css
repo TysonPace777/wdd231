@@ -1,0 +1,33 @@
+.green {
+    color: darkgreen;
+}
+
+.yellow {
+    color: #6b5600;
+}
+
+.red {
+    color: #B00020;
+}
+
+#cards div{
+    border: darkgray solid 1px;
+    padding: 5px;
+    margin: 10px;
+}
+
+@media (min-width: 641px) {
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 640) {
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+}
