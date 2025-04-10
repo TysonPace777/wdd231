@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    sidebar.textContent = message;
+    const h3 = document.createElement("h3");
+    h3.textContent = message;
+
+    sidebar.appendChild(h3);
     localStorage.setItem("lastVisit", new Date().toISOString());
 });
